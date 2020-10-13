@@ -40,7 +40,7 @@ let attempts = 0;
 function checkAttempts() {
   const attemptsNumber = attempts + 1;
   guess.innerHTML = attemptsNumber;
-  /* attemptValue ++; */
+  return attempts++;
 }
 
 //event button
