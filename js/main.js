@@ -21,7 +21,7 @@ clue.innerHTML = ' Escribe un número y dale a Prueba ';
 function checkNumber(){
   let numberValue = number.value;
   numberValue = parseInt(numberValue);
-  
+  console.log(numberValue);
 }
 
 //event button 
