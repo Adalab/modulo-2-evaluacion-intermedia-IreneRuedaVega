@@ -7,6 +7,7 @@ const clue = document.querySelector(".js-clue");
 
 
 
+
 //Function to get the random number
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
@@ -22,6 +23,17 @@ function checkNumber(){
   let numberValue = number.value;
   numberValue = parseInt(numberValue);
   console.log(numberValue);
+  if(numberValue >=1 && numberValue <=100 ){
+    if(random === numberValue){
+      clue.innerHTML = ' ¡Has ganado campeona! ';
+    }else if(random < numberValue){
+      clue.innerHTML = ' Demasiado alto ';
+    }else if(random > numberValue){
+      clue.innerHTML = ' Demasiado bajo ';
+    }
+  }else{
+    clue.innerHTML = ' El número debe estar entre 1 y 100 ';
+  }
 }
 
 //event button 
