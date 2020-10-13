@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: monospace;
+  --color-dark: black;
+  --color-light: white;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--color-dark);
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.clue {
+  margin: 10px 0 10px 0;
+}
+
+.button {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 5px;
+}
