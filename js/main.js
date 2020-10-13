@@ -4,9 +4,9 @@
 const number = document.querySelector(".js-number");
 const btn = document.querySelector(".js-button");
 const clue = document.querySelector(".js-clue");
+const guesses = document.querySelector(".js-guess");
 
-
-
+let attempts = 0;
 
 //Function to get the random number
 function getRandomNumber(max) {
@@ -34,6 +34,11 @@ function checkNumber(){
   }else{
     clue.innerHTML = ' El número debe estar entre 1 y 100 ';
   }
+}
+
+//Function to check the attempts
+function getAttempts(){
+  
 }
 
 //event button 
