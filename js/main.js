@@ -32,17 +32,16 @@ function checkNumber() {
   } else {
     clue.innerHTML = " El número debe estar entre 1 y 100 ";
   }
+  checkAttempts();
 }
 
 let attempts = 0;
 
 //Function to check the attempts
 function checkAttempts() {
-  const attemptsNumber = attempts + 1;
-  guess.innerHTML = attemptsNumber;
-  return attempts++;
+  attempts++;
+  guess.innerHTML = attempts;
 }
 
 //event button
 btn.addEventListener("click", checkNumber);
-btn.addEventListener("click", checkAttempts);
